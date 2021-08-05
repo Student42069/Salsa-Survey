@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Salsa Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="salsas.jpg">
+    <h1 id="title">Survey on store salsas</h1>
+    <p id="description"><em>Just a quick survey on people's preferences in term of salsas sold in grocerie stores</em></p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Which option of salsa would be your favourite?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select a salsa brand</option>
+              <option value="tostitos">Tostitos</option>
+              <option value="newman">Newman's Own</option>
+              <option value="frontera">Frontera</option>
+              <option value="xochitl">Xochitl</option>
+              <option value="pace">Pace</option>
+              <option value="desert">Desert Pepper</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>What is your prefered spiciness?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Hot</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Medium</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Soft</label
+            >
+          </div>
+          <div class="form-group">
+            <p>
+              What salsa would you like being removed from stores
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="tostitos"
+                type="checkbox"
+                class="input-checkbox"
+              />Tostitos</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="newman"
+                type="checkbox"
+                class="input-checkbox"
+              />Newman's Own</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="xochitl"
+                type="checkbox"
+                class="input-checkbox"
+              />Xochitl</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="frontera"
+                type="checkbox"
+                class="input-checkbox"
+              />Frontera</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="desert"
+                type="checkbox"
+                class="input-checkbox"
+              />Desert Pepper</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="pace"
+                type="checkbox"
+                class="input-checkbox"
+              />Pace</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Tell us how you discovered your current favourite salsa:</p>
+            <textarea
+              id="story"
+              class="input-textarea"
+              name="story"
+              placeholder="Enter your story here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+    </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
